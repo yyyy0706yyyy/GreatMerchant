@@ -1,15 +1,3 @@
-fukidasi("ゲームウィンドウ上でSキー") //Sキー入力待ちの告知
-While !(GETKEYSTATE(VK_S)) //Sキー入力まで無限ループ
-sleep(0.1)
-Wend
-
-fukidasi() //入力待ち告知の吹き出しを消す
-
-winid = getid(GET_ACTIVE_WIN) //Sを押したウィンドウでIDが取得されるので確実に取得できる
-
-print winid
-MOUSEORG(winid,1)
-mmv(100,100)
 while true
   if CHKIMG("stamina.bmp")
     mmv(G_IMG_X,G_IMG_Y)
